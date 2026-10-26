@@ -65,7 +65,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>org.example.relogo_fx/org.example.relogo_fx.HelloApplication</mainClass>
+                            <mainClass>ru.mirea.movingcompany/ru.mirea.movingcompany.Launcher</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
@@ -79,3 +79,4 @@
         </plugins>
     </build>
 </project>
+

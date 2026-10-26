@@ -10,4 +10,7 @@
 
 1. Создайте базу PostgreSQL с таблицами `employees`, `clients`, `moving_orders`.
 2. Задайте переменные окружения `DB_URL`, `DB_USER`, `DB_PASSWORD`.
-3. Запустите `Launcher.java` или выполните `./mvnw.cmd javafx:run`.
+3. Запустите `ru.mirea.movingcompany.Launcher` или выполните `./mvnw.cmd javafx:run`.
+
+Структура: `gall` — сотрудники, `abdykalykov` — клиенты, `belov` — заказы.
+Контроллеры используют сервисы и JDBC-реализации интерфейсов репозиториев.
