@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.relogo_fx.ClientController"
+            stylesheets="@style.css" styleClass="page">
+    <top>
+        <VBox spacing="22">
+            <HBox alignment="CENTER_LEFT" styleClass="top-bar">
+                <Label text="ReloGo" styleClass="brand"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Button fx:id="backButton" text="← Главное меню" onAction="#onBackButtonClick" styleClass="quiet-button"/>
+            </HBox>
+            <VBox spacing="8" styleClass="page-heading">
+                <Label text="Клиенты" styleClass="page-title"/>
+                <Label text="Контактные данные и история отношений" styleClass="subtitle"/>
+            </VBox>
+            <FlowPane hgap="10" vgap="10" styleClass="toolbar">
+                <Button fx:id="createClientButton" text="+ Добавить" onAction="#onCreateClientButtonClick" styleClass="primary-button"/>
+                <Button fx:id="updateClientButton" text="Изменить" onAction="#onUpdateClientButtonClick"/>
+                <Button fx:id="deleteClientButton" text="Удалить" onAction="#onDeleteClientButtonClick" styleClass="danger-button"/>
+                <Button fx:id="refreshClientButton" text="Обновить" onAction="#onRefreshClientButtonClick"/>
+            </FlowPane>
+        </VBox>
+    </top>
+    <center>
+        <VBox spacing="12">
+            <padding><Insets top="18" right="32" bottom="16" left="32"/></padding>
+            <TableView fx:id="clientTable" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="idClient" text="ID" prefWidth="65" minWidth="55"/>
+                    <TableColumn fx:id="nameClient" text="ФИО" prefWidth="250" minWidth="55"/>
+                    <TableColumn fx:id="phoneClient" text="Телефон" prefWidth="180" minWidth="55"/>
+                    <TableColumn fx:id="emailClient" text="Email" prefWidth="220" minWidth="55"/>
+                    <TableColumn fx:id="statusClient" text="Статус" prefWidth="150" minWidth="55"/>
+                </columns>
+            </TableView>
+            <Label text="Выберите строку, чтобы изменить или удалить запись" styleClass="hint"/>
+        </VBox>
+    </center>
+    <bottom><Label fx:id="statusLabel" text="Загрузка…" styleClass="footer"/></bottom>
+</BorderPane>

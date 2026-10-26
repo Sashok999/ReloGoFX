@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.relogo_fx.HelloController"
+            stylesheets="@style.css" styleClass="page">
+    <top>
+        <HBox alignment="CENTER_LEFT" styleClass="top-bar">
+            <Label text="ReloGo" styleClass="brand"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label text="УПРАВЛЕНИЕ ПЕРЕЕЗДАМИ" styleClass="eyebrow"/>
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="18">
+            <padding><Insets top="32" right="24" bottom="32" left="24"/></padding>
+            <Label text="Всё для вашего переезда" styleClass="hero-title"/>
+            <Label text="Выберите таблицу, с которой хотите работать" styleClass="subtitle"/>
+            <TilePane alignment="CENTER" hgap="18" vgap="18" prefColumns="3" prefTileWidth="260" prefTileHeight="220">
+                <padding><Insets top="22" bottom="22"/></padding>
+                <Button fx:id="openEmployeeButton" onAction="#onEmployeeButtonClick" styleClass="menu-card" prefWidth="260" prefHeight="220">
+                    <graphic><VBox spacing="16" mouseTransparent="true">
+                        <Label text="01 / КОМАНДА" styleClass="card-number"/>
+                        <Label text="Сотрудники" styleClass="card-title"/>
+                        <Label text="Контакты, должности и зарплаты вашей команды" wrapText="true" maxWidth="210" styleClass="card-description"/>
+                        <Label text="Открыть таблицу →" styleClass="card-link"/>
+                    </VBox></graphic>
+                </Button>
+                <Button fx:id="openClientButton" onAction="#onClientButtonClick" styleClass="menu-card" prefWidth="260" prefHeight="220">
+                    <graphic><VBox spacing="16" mouseTransparent="true">
+                        <Label text="02 / КЛИЕНТЫ" styleClass="card-number"/>
+                        <Label text="Клиенты" styleClass="card-title"/>
+                        <Label text="Контактные данные и статусы ваших клиентов" wrapText="true" maxWidth="210" styleClass="card-description"/>
+                        <Label text="Открыть таблицу →" styleClass="card-link"/>
+                    </VBox></graphic>
+                </Button>
+                <Button fx:id="openMovingOrderButton" onAction="#onMovingOrderButtonClick" styleClass="menu-card" prefWidth="260" prefHeight="220">
+                    <graphic><VBox spacing="16" mouseTransparent="true">
+                        <Label text="03 / ПЕРЕЕЗДЫ" styleClass="card-number"/>
+                        <Label text="Заказы" styleClass="card-title"/>
+                        <Label text="Маршруты, клиенты и ответственные бригадиры" wrapText="true" maxWidth="210" styleClass="card-description"/>
+                        <Label text="Открыть таблицу →" styleClass="card-link"/>
+                    </VBox></graphic>
+                </Button>
+            </TilePane>
+        </VBox>
+    </center>
+    <bottom><Label text="ReloGo · Работаем с заботой о ваших вещах" styleClass="footer"/></bottom>
+</BorderPane>

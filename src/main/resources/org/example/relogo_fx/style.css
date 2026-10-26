@@ -1,0 +1,106 @@
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 14px;
+    -fx-base: #ffffff;
+    -fx-background-color: #f3f6fb;
+    -fx-accent: #2563eb;
+    -fx-focus-color: #2563eb;
+    -fx-faint-focus-color: #2563eb22;
+}
+.label { -fx-text-fill: #17233c; }
+.page { -fx-background-color: #f3f6fb; }
+.top-bar {
+    -fx-padding: 18 32;
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #e2e8f0 transparent;
+}
+.brand { -fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #2563eb; }
+.eyebrow { -fx-font-size: 11px; -fx-text-fill: #64748b; }
+.hero-title { -fx-font-size: 34px; -fx-font-weight: bold; }
+.page-title { -fx-font-size: 28px; -fx-font-weight: bold; }
+.subtitle { -fx-text-fill: #64748b; -fx-font-size: 15px; }
+.page-heading { -fx-padding: 0 32; }
+.toolbar { -fx-padding: 0 32; }
+.footer {
+    -fx-padding: 14 32 20 32;
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+}
+.hint { -fx-font-size: 12px; -fx-text-fill: #64748b; }
+.button {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 8;
+    -fx-text-fill: #253653;
+    -fx-padding: 10 18;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+.button:hover { -fx-background-color: #eaf0fb; -fx-border-color: #93b4ee; }
+.button:focused { -fx-border-color: #2563eb; }
+.button:pressed { -fx-background-color: #dce7fa; }
+.button:disabled { -fx-opacity: 0.45; }
+.primary-button, .dialog-pane .button:default {
+    -fx-background-color: #2563eb;
+    -fx-border-color: #2563eb;
+    -fx-text-fill: white;
+}
+.primary-button:hover, .dialog-pane .button:default:hover { -fx-background-color: #1d4ed8; }
+.danger-button { -fx-text-fill: #b42338; -fx-border-color: #efc6ce; }
+.danger-button:hover { -fx-background-color: #fff0f2; -fx-border-color: #dd8a99; }
+.quiet-button { -fx-background-color: transparent; -fx-border-color: transparent; -fx-text-fill: #64748b; }
+.menu-card {
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 24;
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-border-color: #dde5f0;
+    -fx-border-radius: 16;
+    -fx-effect: dropshadow(gaussian, #10223b0a, 16, 0, 0, 5);
+}
+.menu-card:hover { -fx-background-color: #f8faff; -fx-border-color: #2563eb; }
+.menu-card .card-number { -fx-font-size: 11px; -fx-text-fill: #71829b; }
+.menu-card .card-title { -fx-font-size: 24px; -fx-font-weight: bold; }
+.menu-card .card-description { -fx-font-size: 13px; -fx-font-weight: normal; -fx-text-fill: #64748b; }
+.menu-card .card-link { -fx-font-size: 13px; -fx-text-fill: #2563eb; }
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-color: #dce4ef;
+    -fx-border-radius: 12;
+    -fx-padding: 2;
+    -fx-table-cell-border-color: transparent;
+}
+.table-view .column-header-background { -fx-background-color: #eaf0f9; }
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-size: 44;
+    -fx-border-color: transparent transparent #dce4ef transparent;
+}
+.table-view .column-header .label { -fx-alignment: CENTER_LEFT; -fx-padding: 0 12; -fx-text-fill: #52627c; }
+.table-row-cell { -fx-background-color: white; -fx-cell-size: 44; }
+.table-row-cell:odd { -fx-background-color: #f8fafd; }
+.table-row-cell:filled:hover { -fx-background-color: #edf3fe; }
+.table-row-cell:filled:selected { -fx-background-color: #dce9ff; }
+.table-row-cell:filled:selected .table-cell { -fx-text-fill: #163f81; }
+.table-cell {
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 11 12;
+    -fx-border-color: transparent transparent #eef2f7 transparent;
+    -fx-text-fill: #253653;
+}
+.table-view .placeholder .label { -fx-text-fill: #8290a5; }
+.text-field, .combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+    -fx-padding: 8;
+    -fx-pref-width: 290;
+}
+.text-field:focused, .combo-box:focused { -fx-border-color: #2563eb; }
+.dialog-pane { -fx-background-color: #f8faff; -fx-padding: 14; }
+.dialog-pane:header .header-panel { -fx-background-color: #edf3fe; -fx-padding: 18; }
+.dialog-pane:header .header-panel .label { -fx-font-size: 19px; -fx-font-weight: bold; }
+.dialog-pane .button-bar { -fx-padding: 12; }
